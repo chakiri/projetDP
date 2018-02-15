@@ -1,8 +1,10 @@
 <?php
-	function check(){
-		if (1 + 1){
-			return true;
-		}
-		return false;
+
+	namesapce Test;
+
+	public function check(){
+		public $nb;
+		return $nb * 2;
 	}
+
 ?>

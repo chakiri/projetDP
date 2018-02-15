@@ -1,28 +1,23 @@
-
 language: php
-php: 
-  - 7.0
-  - 7.1
-  - 7.1.8
+php:
+- 7.0
+- 7.1
+- 7.1.8
 before_script:
-  - composer install
-
+- composer install
 script:
-  - docker run --rm -v $PWD:/app phpqa/phpcs .
-  - docker run --rm -v $PWD:/app phpqa/security-checker security:check
-  - phpunit
-  - if [[ "$WITH_COVERAGE" == "true" ]]; then xdebug-enable; fi
-
+- docker run --rm -v $PWD:/app phpqa/phpcs .
+- docker run --rm -v $PWD:/app phpqa/security-checker security:check
+- phpunit
+- if [[ "$WITH_COVERAGE" == "true" ]]; then xdebug-enable; fi
 deploy:
   provider: heroku
   api_key:
-    secure: Kx6FNgKzmkrFKD5/OPcZjecLPJHsgdBqQsC8s+Ka/pBJqx2KqlQcgIWMcQjlAYR3nvwE4CrM1T5pLYINbXvvZk8rYaJX32THl7/ZEXaUON1+0VPYelk2z9Apm94hkx74vN4NG3lQQpaoZnRkG5utCuBjdHZUX+WqrO7NSqicxcI6+Ml4/ASpJRDhFnbwKzxai034eEWTm4GUCYCtAnaimfmPvcdfOhLWuJvnToaViPLnbXh2ytMkbtS3a22MCs2w1DsTHWtbfaRcJzkkr/L5NcQCgngZmI82rgfBlZaXyl1r5mdDJzTi4dlI5GVB/hgx8XW/f7g8gocLoejaJRNVTQbdbYwMOfJVrrQBdZWW4OPi425u9OsE8XVE1/cLwJ8IMQ6R3H0o0wSvGlsIysmW8ie5m3waCw9brF3EIh0d6PPxdZbmc3rDz9N82Wbl5KQUbwnV6jSj5j4DUF9TjDheBBPYkvaYoEtVNPvKk2A70ABzjAkkbA/hZPDbWgd+sJRsN0gOOXahAU5SCKsE7Aq9gI8d1RePcHQRKanI+AK0k3AYHv3zXXhFD4u0X1V5yc2PA9Z9Mw3/rkPBfl5Amx9QjpaiD1OLX2dMnw5eHWsz6S7m2tbYH2q/xOKoK8hQ8ZsAPQ6iWoha9I2GYnYMWl9HE84BZgB9M5DAmR0oInJU6b4=
+    secure: ASEg0Ak6IUnqxuINF1n8i56jlD+X4fcBRPVmv5pmynVLDH9e6h8JNA3u8Z3O0RZn0LyG3c+q2sL9glpaNsNSCTQ4VnrVYR0arp3SR3UMYD2xh+pXEK/fCXuw86A3iwk0jAaob/DFy5kUghQOQEkRK7BRgAdSHHa5laO/8Hq3ngkVWS9/uKKrw4SWXE0DHg9faIg3gOpA0/JDT/4c1Wi9KhLUQEl4YH2reRW65d+XZtlNdWH5zJgW7xg1VFWvCZcpgh4Utp5ZsE2U0ReKaKhHkThf1s5rNO6lsK362Rt+IgJVJr5TjvSNX72MalXx7V1yHkLxZQoh+ZTOh4ExVm/eYt1Wo5Utw/nwJKDixqNDG3fOioVQCTUv8vqSoQ4Xc6XfmRXq692c2XlcUperYTozbYdbQ3WUQ0shTnLKtyDLKauaTgCXtECVTZ7am+4DZ7ELKcFScQaYeNgMAK5JkaRtew49EW2Mikyb75wB6tUENN5da7zHgb06u2Td2mdX+uGettmQO+YDvfxM3jVUcp5lA1exWV9Q5n4dCqjGRvTJPGT5sfiW0NeZurt5xDziZn+s7YRlAsCXoZ0LDrjh/QEzWMzbQs0ceVO3oAR2fzVUl9XjRKbkSsU/C2zQFBIWfgZM4QzVAvMcP5gMnDjJ4jO4MF5NrYK7ZIJgcu78hBshIzs=
   app: projetdp
   on:
     repo: chakiri/projetDP
     branch: pull-request-master
-
-
 notifications:
   email:
     recipients:

@@ -1,3 +1,6 @@
+<?php
+  echo "Mon site vitrine"
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -382,3 +385,5 @@
   </body>
 
 </html>
+
+<?php ?>

@@ -17,10 +17,10 @@ deploy:
   provider: heroku
   api_key:
     secure: Kx6FNgKzmkrFKD5/OPcZjecLPJHsgdBqQsC8s+Ka/pBJqx2KqlQcgIWMcQjlAYR3nvwE4CrM1T5pLYINbXvvZk8rYaJX32THl7/ZEXaUON1+0VPYelk2z9Apm94hkx74vN4NG3lQQpaoZnRkG5utCuBjdHZUX+WqrO7NSqicxcI6+Ml4/ASpJRDhFnbwKzxai034eEWTm4GUCYCtAnaimfmPvcdfOhLWuJvnToaViPLnbXh2ytMkbtS3a22MCs2w1DsTHWtbfaRcJzkkr/L5NcQCgngZmI82rgfBlZaXyl1r5mdDJzTi4dlI5GVB/hgx8XW/f7g8gocLoejaJRNVTQbdbYwMOfJVrrQBdZWW4OPi425u9OsE8XVE1/cLwJ8IMQ6R3H0o0wSvGlsIysmW8ie5m3waCw9brF3EIh0d6PPxdZbmc3rDz9N82Wbl5KQUbwnV6jSj5j4DUF9TjDheBBPYkvaYoEtVNPvKk2A70ABzjAkkbA/hZPDbWgd+sJRsN0gOOXahAU5SCKsE7Aq9gI8d1RePcHQRKanI+AK0k3AYHv3zXXhFD4u0X1V5yc2PA9Z9Mw3/rkPBfl5Amx9QjpaiD1OLX2dMnw5eHWsz6S7m2tbYH2q/xOKoK8hQ8ZsAPQ6iWoha9I2GYnYMWl9HE84BZgB9M5DAmR0oInJU6b4=
-  app: opencfp-chakiri
+  app: projetdp
   on:
-    repo: chakiri/Projet_EnvDev
-    branch: chakiri
+    repo: chakiri/projetDP
+    branch: pull-request-master
 
 
 notifications:

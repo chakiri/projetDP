@@ -17,6 +17,7 @@ script:
 #   - phpunit
 #   - if [[ "$WITH_COVERAGE" == "true" ]]; then xdebug-enable; fi
 
+
 deploy:
   provider: heroku
   api_key:

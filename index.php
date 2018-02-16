@@ -1,5 +1,5 @@
 <?php
-  echo "Mon site vitrine"
+  echo "Mon site vitrine de deployement continue"
 ?>
 <!DOCTYPE html>
 <html lang="fr">

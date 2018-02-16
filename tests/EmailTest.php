@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-require_once 'src/Email.php';
+require_once 'Email.php';
 
 use PHPUnit\Framework\TestCase;
 

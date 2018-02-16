@@ -6,5 +6,7 @@
             "email": "yassir.chakiri12@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "fzaninotto/faker": "^1.7"
+    }
 }

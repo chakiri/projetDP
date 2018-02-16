@@ -1,3 +1,6 @@
+<?php
+  echo "Mon site vitrine"
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -8,7 +11,7 @@
     <meta name="description" content="Nos taxis conventionnés cpam en yvelines agrées sécurité sociale vous accompagnent pour tous vos déplacements personnels ou médicals">
     <meta name="author" content="">
 
-    <title>Taxi CPAM Yvelines</title>
+    <title>Test CD</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -382,3 +385,5 @@
   </body>
 
 </html>
+
+<?php ?>
